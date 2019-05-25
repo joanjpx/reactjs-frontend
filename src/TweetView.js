@@ -1,29 +1,24 @@
 import React from 'react';
 
-const PhotoPost = (props) => {
+const TweetView = (props) => {
   return (
   <div className="container">
   <div className="card">
-    <div className="card-image">
-      <figure className="image">
-        <img src={props.url} alt="Placeholder"/>
-      </figure>
-    </div>
     <div className="card-content">
       <div className="media">
         <div className="media-left">
           <figure className="image is-48x48">
-            <img src="https://slackhq.com/wp-content/uploads/2016/06/slack-help-hr-920.jpg?w=460" alt="Placeholder"/>
+            <img src="https://bk-makerspace.com/wp-content/uploads/2018/07/slack_47017.png" alt="Placeholder"/>
           </figure>
         </div>
         <div className="media-content">
           <p className="title is-4">{props.name}</p>
-          <p className="subtitle is-6">@{props.user}</p>
+          <p className="subtitle is-6">@developer</p>
         </div>
       </div>
 
       <div className="content">
-        {props.message}. #responsive @bootstrap @reactjs
+        {props.message}. #js #dev #test
         <br/>
         <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
       </div>
@@ -40,4 +35,4 @@ const PhotoPost = (props) => {
   );
 }
 
-export default PhotoPost;
+export default TweetView;
